@@ -17,3 +17,24 @@
 }
 ]
 }
+3. h2 db link: localhost:8081/h2-console/
+3.1: JDBC-URL: jdbc:h2:mem:manulifedb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+
+===kafka===
+using kafka version: kafka_2.13-3.7.0
+using kafka version: kafka_2.13-3.7.0
+
+run via git bash
+1. bin/zookeeper-server-start.sh config/zookeeper.properties
+
+2. bin/kafka-server-start.sh config/server.properties
+
+3. bin/kafka-topics.sh --create --topic orders --bootstrap-server localhost:9092
+
+4. bin/kafka-topics.sh --describe --topic orders --bootstrap-server localhost:9092
+
+5. bin/kafka-console-producer.sh --topic orders --bootstrap-server localhost:9092
+
+6. bin/kafka-console-consumer.sh --topic orders --from-beginning --bootstrap-server localhost:9092
+
+note: details instructions at https://kafka.apache.org/quickstart
