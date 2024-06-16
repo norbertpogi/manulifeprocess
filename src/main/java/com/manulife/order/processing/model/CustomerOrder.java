@@ -1,7 +1,7 @@
 package com.manulife.order.processing.model;
 
-import jakarta.persistence.*;
 
+import javax.persistence.*;
 import java.util.List;
 
 @Entity

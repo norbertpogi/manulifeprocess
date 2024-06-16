@@ -1,6 +1,7 @@
 package com.manulife.order.processing.model;
 
-import jakarta.persistence.Embeddable;
+
+import javax.persistence.Embeddable;
 
 @Embeddable
 class Product {
